@@ -4,7 +4,7 @@
 Show the improved process, in the same style as the as-is so they can be compared side by side.
 
 ## How to write
-- Same lanes and notation as the as-is map; `T-01…` step IDs.
+- Same lanes, notation and **readability limits** as the as-is map (≤ 12 nodes per diagram; overview + per-phase detail if longer); `T-01…` step IDs.
 - Highlight new or changed steps with `classDef changed fill:#d1fadf,stroke:#12b76a,color:#054f31`.
 - Must respect constraints in context.md; flag any assumption the design depends on.
 

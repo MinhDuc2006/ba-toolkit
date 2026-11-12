@@ -8,7 +8,10 @@ Show the whole current system on one page, colour-coded by rating.
 - Use `subgraph` per team, location, or layer (people / tools / external) — whichever reads most clearly.
 - Dashed edges (`-.->`) for manual handoffs (email, phone, re-keying); solid for automated.
 - Apply the `classDef` colours from rating-scale.md and add a legend line under the diagram.
-- Keep to ~25 nodes. If larger, draw one overview plus one diagram per area.
+- **Readability limits (hard):** max **12 nodes and 15 edges per diagram**; edge labels = handoff ID + ≤ 3 words (details go in the handoff table).
+- **2a Overview** (always): one node per group (team/area/external party), not per component. Node label = group name + its worst rating emoji, e.g. `Stores 🟠`. Colour each group node by its worst rating. Edges = the main flows between groups.
+- **2b Detail** (one diagram per group with problems): that group's components, plus neighbours shown as plain grey nodes. Skip groups that are all 🟢.
+- Prefer `flowchart TB` when a diagram has more than 6 nodes in a row.
 
 ## Format
 ```mermaid
