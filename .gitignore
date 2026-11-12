@@ -1,0 +1,6 @@
+.DS_Store
+.env
+
+# Real engagements stay local
+projects/*
+!projects/.gitkeep
